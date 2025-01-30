@@ -6,7 +6,7 @@ int main() {
     scanf("%d %d", &n, &b);
 
     if(n & (1<<b)){
-        b = ~b;
+        n = n& ~(1<<b);
     }
 
     printf("%d", n);
