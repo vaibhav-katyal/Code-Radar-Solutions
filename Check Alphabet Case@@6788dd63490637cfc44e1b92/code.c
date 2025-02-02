@@ -6,7 +6,7 @@ int main() {
     scanf("%c", &ch);
     int asci_ch = ch;
     
-    if(asci_ch>=65 && asci_ch<=90){
+    if(asci_ch>=65 && asci_ch<=97){
         printf("Uppercase");
     }else{
         printf("Lowercase");
