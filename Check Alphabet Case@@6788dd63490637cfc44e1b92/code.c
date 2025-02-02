@@ -11,7 +11,7 @@ int main() {
     }else if(asci_ch>=97 && asci_ch<=122){
         printf("Lowercase");
     }else{
-        printf("Not an alphabet")
+        printf("Not an alphabet");
     }
     return 0;
 }
