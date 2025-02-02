@@ -4,12 +4,12 @@ int main() {
     char ch;
 
     scanf("%c", &ch);
+    int asci_ch = ch;
     
-    // char lower = ch.tolower;
-    if(isupper(ch)){
-        printf("Uppercase");
-    }else{
+    if(asci_ch>=65 && asci_ch<=90){
         printf("Lowercase");
+    }else{
+        printf("Uppercase");
     }
     return 0;
 }
