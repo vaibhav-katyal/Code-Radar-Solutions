@@ -5,11 +5,11 @@ int main() {
 
     scanf("%c", &ch);
     
-    char lower = ch.tolower;
-    if(ch == lower){
-        printf("Lowercase");
-    }else{
+    // char lower = ch.tolower;
+    if(ch.isupper()){
         printf("Uppercase");
+    }else{
+        printf("Lowercase");
     }
     return 0;
 }
