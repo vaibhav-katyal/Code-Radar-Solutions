@@ -6,7 +6,7 @@ int main() {
     scanf("%c", &ch);
     
     // char lower = ch.tolower;
-    if(ch.isupper()){
+    if(isupper(ch)){
         printf("Uppercase");
     }else{
         printf("Lowercase");
