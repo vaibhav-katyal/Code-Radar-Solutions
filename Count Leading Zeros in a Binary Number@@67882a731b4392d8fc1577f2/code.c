@@ -4,17 +4,19 @@ int main() {
     int num;
     scanf("%d", &num);
 
+    if(num == 0){
+        printf("%d", 32);
+    }
+
     int count = 0;
-    while(num>0){
-        if(num%2 == 0){
-            count += 1;
+    for(int i=31; i>=0; i--){
+        if(num & (1<<i)){
+            break;
         }
-        num = num/2;
+
+        count += 1;
     }
-    if(count>=0){
-        printf("%d", 32-count-1);
-    }else{
-        printf("%d", 0);
-    }
+
+    printf("%d", count);
     return 0;
 }
