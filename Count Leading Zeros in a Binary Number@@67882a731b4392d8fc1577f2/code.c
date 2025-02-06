@@ -10,7 +10,10 @@ int main() {
         }
         num = num/2;
     }
-
-    printf("%d", 32-count-1);
+    if(count>0){
+        printf("%d", 32-count-1);
+    }else{
+        printf("%d", 0);
+    }
     return 0;
 }
