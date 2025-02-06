@@ -5,6 +5,7 @@ int main() {
     scanf("%d", &num);
     if(num == 1){
         printf("%d", 1);
+        break;
     }
     int count = 0;
     while(num>0){
