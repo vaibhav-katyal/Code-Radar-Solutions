@@ -8,10 +8,9 @@ int main() {
         if(num%2 == 0){
             count += 1;
         }
-
         num = num/2;
     }
 
-    printf("%d", count);
+    printf("%d", 32-count);
     return 0;
 }
