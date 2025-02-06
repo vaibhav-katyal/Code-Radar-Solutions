@@ -11,6 +11,6 @@ int main() {
         num = num/2;
     }
 
-    printf("%d", 32-count);
+    printf("%d", 32-count-1);
     return 0;
 }
