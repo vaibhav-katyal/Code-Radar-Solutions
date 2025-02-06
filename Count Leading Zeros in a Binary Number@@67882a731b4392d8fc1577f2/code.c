@@ -3,6 +3,9 @@
 int main() {
     int num;
     scanf("%d", &num);
+    if(num == 1){
+        printf("%d", 1);
+    }
     int count = 0;
     while(num>0){
         if(num%2 == 0){
