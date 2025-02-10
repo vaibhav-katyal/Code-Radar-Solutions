@@ -6,6 +6,10 @@ int main() {
 
     scanf("%d", &num);
 
+    if(num ==0){
+        printf("%d", 0);
+    }
+
     while(num>0){
         arr[i] = num%2;
         num = num/2;
