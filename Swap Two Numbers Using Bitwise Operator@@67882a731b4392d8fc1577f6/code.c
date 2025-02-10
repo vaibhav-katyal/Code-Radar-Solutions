@@ -4,10 +4,14 @@ int main() {
     int a,b;
     scanf("%d %d", &a, &b);
 
-    int temp = a;
-    a = b;
-    b = temp;
+    // if you xor a number twice, you get back the original number  a^b^b = a
+    // a^b^a = b
+
+    a = a^b;
+    b = a^b;
+    a = a^b;
 
     printf("%d %d", a, b);
+
     return 0;
 }
