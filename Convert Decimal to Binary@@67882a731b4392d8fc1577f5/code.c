@@ -12,7 +12,7 @@ int main() {
         i++;
     }
 
-    for(int j=i; j>=0; j--){
+    for(int j=arr.size(); j>=0; j--){
         printf("%d", arr[j]);
     }
 
