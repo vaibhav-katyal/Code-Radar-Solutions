@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int num;
+    int num, i;
     int arr[32];
 
     scanf("%d", &num);
@@ -12,7 +12,7 @@ int main() {
         i++;
     }
 
-    for(int j=arr.size(); j>=0; j--){
+    for(int j=i; j>=0; j--){
         printf("%d", arr[j]);
     }
 
