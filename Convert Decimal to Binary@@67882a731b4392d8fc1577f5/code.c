@@ -8,5 +8,6 @@ int main() {
         printf("%d", num%2);
         num = num/2;
     }
+
     return 0;
 }
