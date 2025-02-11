@@ -5,7 +5,7 @@ int main() {
 
     scanf("%d %d %d", &s1, &s2, &s3);
 
-    if(s1 == s2 == s3){
+    if((s1 == s2) && (s2 == s3) && (s3 == s1)){
         printf("Equilateral");
     }
     else if((s1 == s2) or (s2 == s3) or (s3 == s1)){
