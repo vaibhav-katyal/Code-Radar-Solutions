@@ -5,6 +5,8 @@ int main() {
     int a,b;
     scanf("%d %d", &a, &b);
 
-    (a == pow(b,2)) ? printf("Yes") : printf("No");
+    // by default pow function will return double
+    // we have to convert it to int
+    (a == (int)pow(b,2)) ? printf("Yes") : printf("No");
     return 0;
 }
