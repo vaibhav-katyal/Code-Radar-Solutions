@@ -7,6 +7,7 @@ int main() {
 
     // by default pow function will return double
     // we have to convert it to int
-    (a == (int)pow(b,2)) ? printf("Yes") : printf("No");
+    // (a == (int)pow(b,2)) ? printf("Yes") : printf("No");
+    (a == b*b) ? printf("Yes") : printf("No");
     return 0;
 }
