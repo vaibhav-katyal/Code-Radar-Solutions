@@ -4,7 +4,8 @@
 int main() {
     int a,b;
     scanf("%d %d", &a, &b);
+    int result = pow(b,2);
 
-    if(a == pow(b,2))?printf("Yes"):printf("No");
+    if(a == result)?printf("Yes"):printf("No");
     return 0;
 }
