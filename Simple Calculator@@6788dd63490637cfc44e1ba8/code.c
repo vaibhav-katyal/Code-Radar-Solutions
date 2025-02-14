@@ -5,7 +5,6 @@ int main() {
     char op;
 
     scanf("%d %d %c", &a, &b, &op);
-    int div = a/b;
     if(op == '+'){
         printf("%d", a+b);
     }else if(op == '-'){
