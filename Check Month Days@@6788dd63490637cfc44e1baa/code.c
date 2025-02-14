@@ -32,7 +32,7 @@ int main(){
         printf("%d", 31);
 
         default:
-        printf("Invalid month")
+        printf("Invalid month");
     }
     return 0;
 }
