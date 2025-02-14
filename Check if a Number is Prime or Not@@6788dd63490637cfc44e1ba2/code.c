@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<maths.h>
+#include<math.h>
 
 void checkPrime(int n){
     if(n<=1){
