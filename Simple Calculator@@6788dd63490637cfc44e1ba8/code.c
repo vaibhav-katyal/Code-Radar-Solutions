@@ -5,7 +5,7 @@ int main() {
     char op;
 
     scanf("%d %d %c", &a, &b, &op);
-
+    int div = a/b;
     if(op == '+'){
         printf("%d", a+b);
     }else if(op == '-'){
@@ -13,7 +13,7 @@ int main() {
     }else if(op == '*'){
         printf("%d", a*b);
     }else{
-        printf("%d",a/b);
+        printf("%d",div);
     }
     return 0;
 }
