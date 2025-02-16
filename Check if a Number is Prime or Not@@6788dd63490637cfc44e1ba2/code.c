@@ -6,8 +6,8 @@ void checkPrime(int n){
         printf("Not Prime");
         return;
     }
-
-    for(int i=2; i<=pow(n,0.5); i++){
+    int limit = sqrt(n);
+    for(int i=2; i<=limit; i++){
         if(n%i == 0){
             printf("Not Prime");
             return;
