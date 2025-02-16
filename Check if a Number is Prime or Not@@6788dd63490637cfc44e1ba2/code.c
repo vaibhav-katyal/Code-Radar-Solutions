@@ -7,7 +7,7 @@ void checkPrime(int n){
         return;
     }
 
-    for(int i=2; i<=(int)sqrt(n); i++){
+    for(int i=2; i<=pow(n,0.5); i++){
         if(n%i == 0){
             printf("Not Prime");
             return;
