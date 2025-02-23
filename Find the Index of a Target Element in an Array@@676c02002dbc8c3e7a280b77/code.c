@@ -13,11 +13,17 @@ int main(){
     int k;
     scanf("%d", &k);
 
+    int flag = 0;
+
     for(int i=0; i<n; i++){
         if(arr[i] == k){
             printf("%d", i);
-        break;
+            flag = 1;
+            break;
         }
+    }
+
+    if(!flag){
         printf("%d", -1);
     }
 
