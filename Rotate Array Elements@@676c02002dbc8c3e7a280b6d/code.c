@@ -1,10 +1,10 @@
 #include<stdio.h>
 
-void swap(int a, int b){
-    int temp = a;
-    a = b;
-    b = temp;
-}
+// void swap(int a, int b){
+//     int temp = a;
+//     a = b;
+//     b = temp;
+// }
 
 int main(){
     int n, val;
@@ -20,7 +20,10 @@ int main(){
     scanf("%d", &k);
     for(int i = 0; i<k; i++){
         for(int j=0; j<n; j++){
-            swap(arr[i], arr[n-1]);
+            // swap(arr[i], arr[n-1]);
+            int temp = arr[i];
+            arr[i] = arr[n-1];
+            arr[n-1] = temp;
         }
     }
 
