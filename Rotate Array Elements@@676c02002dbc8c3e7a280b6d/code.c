@@ -1,31 +1,30 @@
 #include<stdio.h>
 
-// void swap(int a, int b){
-//     int temp = a;
-//     a = b;
-//     b = temp;
-// }
-
+void reverseArr(int arr[], int l, int r){
+    while(l<r){
+        int temp = arr[l];
+        arr[l] = arr[r];
+        arr[r] = temp;
+        l++;
+        r--;
+    }
+}
 int main(){
     int n, val;
     scanf("%d", &n);
-
     int arr[n];
 
     for(int i=0; i<n; i++){
         scanf("%d", &val);
         arr[i] = val;
     }
+
     int k;
     scanf("%d", &k);
-    for(int i = 0; i<k; i++){
-        for(int j=0; j<n-i; j++){
-            // swap(arr[i], arr[n-1]);
-            int temp = arr[i];
-            arr[i] = arr[n-1];
-            arr[n-1] = temp;
-        }
-    }
+
+    reverseArr(arr, 0, n-k);
+    reverseArr(arr, n-k, n-1);
+    reverseArr(arr, 0, n-1);
 
     for(int l=0; l<n; l++){
         printf("%d\n", arr[l]);
