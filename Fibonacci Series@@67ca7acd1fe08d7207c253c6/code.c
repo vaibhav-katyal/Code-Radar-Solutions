@@ -5,9 +5,9 @@ void fibonacciSeries(int n){
 
     int i=0;
     while(n !=0){
+        int c = a+b;
         a = b;
         b = c;
-        int c = a+b;
 
         arr[i] = c;
         i++;
