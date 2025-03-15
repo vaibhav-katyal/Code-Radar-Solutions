@@ -4,10 +4,11 @@ void fibonacciSeries(int n){
     int arr[n];
 
     int i=0;
+    int c;
     while(n !=0){
-        int c = a+b;
         a = b;
         b = c;
+        c = a+b;
 
         arr[i] = c;
         i++;
