@@ -9,11 +9,11 @@ int main(){
     }
     int check = -1;
     for(int i=0; i<n; i++){
-        if(arr[i] == check){
-            printf("%d", check);
-            break;
-        }else{
-            check = arr[i];
+        for(int j=i; j<n; j++){
+            if(arr[i] == arr[j]){
+                check = arr[i];
+                break;
+            }
         }
     }
     return 0;
