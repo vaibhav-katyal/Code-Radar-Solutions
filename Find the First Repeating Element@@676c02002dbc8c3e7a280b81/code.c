@@ -16,5 +16,6 @@ int main(){
             }
         }
     }
+    printf("%d", check);
     return 0;
 }
