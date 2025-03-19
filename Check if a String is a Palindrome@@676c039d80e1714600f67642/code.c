@@ -10,7 +10,8 @@ int main(){
     int left = 0;
     int right = len-1;
 
-    char str1[100] = str;
+    char str1[100];
+    strcpy(str1, str);
 
     while(left<right){
         char temp = str1[left];
