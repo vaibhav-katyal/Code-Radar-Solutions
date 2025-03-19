@@ -21,7 +21,7 @@ int main(){
 
     sort(arr, n);
 
-    printf("%d %d", arr[0], arr[-1]);
+    printf("%d %d", arr[0], arr[n-1]);
 
     return 0;
 }
