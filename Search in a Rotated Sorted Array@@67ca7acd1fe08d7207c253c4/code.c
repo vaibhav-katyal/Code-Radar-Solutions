@@ -19,7 +19,7 @@ int searchInRotatedArray(int *arr, int n, int target){
             if(arr[mid]<=target && target <= arr[high]){
                 low = mid+1;
             }else{
-                high = mid+1;
+                high = mid-1;
             }
         }
     }
