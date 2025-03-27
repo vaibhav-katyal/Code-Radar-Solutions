@@ -22,10 +22,12 @@ int main(){
         right--;
     }
 
-    if(str1 == str){
-        printf("Yes");
-    }else{
-        printf("No");
-    }
+    // if(str1 == str){
+    //     printf("Yes");
+    // }else{
+    //     printf("No");
+    // }
+
+    printf("%s", str1);
     return 0;
 }
