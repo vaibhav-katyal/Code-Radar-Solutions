@@ -8,7 +8,7 @@ int searchInRotatedArray(int *arr, int n, int target){
             return mid;
         }
 
-        else if(arr[low] < arr[mid]){
+        else if(arr[low] <= arr[mid]){
             if(arr[low]<=target && target <= arr[mid]){
                 high = mid-1;
             }else{
