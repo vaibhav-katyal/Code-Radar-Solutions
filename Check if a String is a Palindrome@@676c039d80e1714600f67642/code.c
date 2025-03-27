@@ -13,7 +13,7 @@ int main(){
     char str1[100];
     strcpy(str1, str);
 
-    while(left<right){
+    while(left<=right){
         char temp = str1[left];
         str1[left] = str1[right];
         str1[right] = temp;
