@@ -4,7 +4,7 @@
 int main(){
 
     char str[100];
-    scanf("%s", &str);
+    scanf("%s", str);
 
     int len = strlen(str);
     int left = 0;
@@ -22,13 +22,11 @@ int main(){
         right--;
     }
 
-    // if(str1 == str){
-    //     printf("Yes");
-    // }else{
-    //     printf("No");
-    // }
+    if(strcmp(str, str1) == 0){
+        printf("Yes");
+    }else{
+        printf("No");
+    }
 
-    printf("%s", str1);
-    printf("%s", str);
     return 0;
 }
