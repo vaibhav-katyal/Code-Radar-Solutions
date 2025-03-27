@@ -29,5 +29,6 @@ int main(){
     // }
 
     printf("%s", str1);
+    printf("%s", str);
     return 0;
 }
