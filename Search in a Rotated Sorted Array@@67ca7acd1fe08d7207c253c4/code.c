@@ -1,4 +1,4 @@
-int searchRotatedArray(int *arr, int n, int target){
+int searchInRotatedArray(int *arr, int n, int target){
     int low = 0;
     int high = n-1;
     int ind = 0;
