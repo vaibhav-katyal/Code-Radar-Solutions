@@ -10,12 +10,16 @@ int searchInRotatedArray(int *arr, int n, int target){
             break;
         }
         else if(arr[low] < arr[mid]){
-            ind = low;
+            if(arr[low]<arr[ind]){
+                ind = low;
+            }
             low = mid+1;
         }else{
-            ind = mid;
+            if(arr[mid]<arr[ind]){
+                ind = mid;
+            }
             high = mid-1;
-        }   
+        }
     }
     return ind;
 }
