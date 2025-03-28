@@ -7,8 +7,8 @@ int main(){
     char a;
     char b;
 
-    scanf("%c", &a);
-    scanf("%c", &b);
+    scanf(" %c", &a);
+    scanf(" %c", &b);
     for(int i=0; str[i]!='\0'; i++){
         if(str[i] == a){
             str[i] = b;
