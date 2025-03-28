@@ -4,6 +4,6 @@
 int main(){
     char str[100];
 
-    scanf("%s", &str);
+    fgets(str, sizeof(str), stdin);
     printf("%d", strlen(str));
 }
