@@ -14,7 +14,7 @@ int Peakelement(int *arr, int n){
         if(arr[mid] > arr[mid-1] && arr[mid]>arr[mid+1]){
             return arr[mid];
         }
-        else if((mid%2 !=0 && arr[mid]>arr[mid-1]) || (mid%2 = 0 && arr[mid]>arr[mid+1])){
+        else if((mid%2 !=0 && arr[mid]>arr[mid-1]) || (mid%2 == 0 && arr[mid]>arr[mid+1])){
             low = mid+1;
         }
         else{
