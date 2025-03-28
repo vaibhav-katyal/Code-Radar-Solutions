@@ -8,7 +8,7 @@ int main(){
     fgets(str1, sizeof(str1), stdin);
     fgets(str2, sizeof(str2), stdin);
 
-    str_comb = strcat(str1, str2);
-    printf("%s", str_comb);
+    strcat(str1, str2);
+    printf("%s", str1);
     return 0;
 }
