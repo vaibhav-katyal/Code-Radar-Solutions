@@ -6,7 +6,7 @@ void caesarCipher(char *message, int shift, char *encrypted){
         char ch = message[i];
 
         if(isalpha(ch)){
-            char base = isupper(ch) :'A'?'a';
+            char base = isupper(ch) ?'A':'a';
             encrypted[i] = (ch-base+shift)%26 + base;
         }else{
             encrypted[i] = ch;
