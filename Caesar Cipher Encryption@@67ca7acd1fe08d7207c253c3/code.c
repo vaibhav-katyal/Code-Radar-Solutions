@@ -4,4 +4,6 @@ char caesarCipher(char *message, int shift, char *encrypted){
 
         encrypted[i] = final;
     }
+
+    return *encrypted;
 }
