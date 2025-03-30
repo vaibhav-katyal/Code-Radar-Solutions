@@ -4,12 +4,12 @@
 void caesarCipher(char *message, int shift, char *encrypted){
     for(int i=0; message[i] != '\0'; i++){
         char ch = message[i];
-
+        char base;
         if(isalpha(ch)){
             if(isupper(ch)){
-                char base = 'A';
+                base = 'A';
             }else{
-                char base = 'a';
+                base = 'a';
             }
 
             encrypted[i] = (ch-base+shift)%26 +base;
