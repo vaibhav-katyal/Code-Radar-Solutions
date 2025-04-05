@@ -11,8 +11,8 @@ int main(){
     }
 
     int min = abs(arr[0]-arr[1]);
-    int p1 = 0;
-    int p2 = 0;
+    int p1 = arr[0];
+    int p2 = arr[1];
     for(int i=0; i<n; i++){
         for(int j=i+1; j<n; j++){
             if(abs(arr[i] - arr[j])<min){
