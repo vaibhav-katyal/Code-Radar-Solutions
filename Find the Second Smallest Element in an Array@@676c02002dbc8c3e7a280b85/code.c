@@ -9,7 +9,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    int arr_new[];
+    int arr_new[n];
     int k = 0;
     
     int visited[n];
@@ -34,7 +34,7 @@ int main(){
         }
     }
 
-    for(int i=n-1; i>=0; i--){
+    for(int i=k-1; i>=0; i--){
         for(int j=0; j<i; j++){
             if(arr_new[j]>arr_new[j+1]){
                 int temp = arr_new[j];
