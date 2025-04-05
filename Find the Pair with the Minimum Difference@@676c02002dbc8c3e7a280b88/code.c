@@ -23,9 +23,9 @@ int main(){
         }
     }
 
-    if(p1<p2)[
+    if(p1<p2){
         printf("%d %d", p1, p2);
-    ]
+    }
     else{
         printf("%d %d", p2, p1);
     }
