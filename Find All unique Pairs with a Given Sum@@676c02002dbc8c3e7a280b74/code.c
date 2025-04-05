@@ -36,6 +36,12 @@ int main(){
 
     }
 
+    if(k == 1){
+        if(arr[0]+arr[0] == target){
+            printf("%d %d", arr[0], arr[0]);
+        }
+    }
+
     for(int i=0; i<k; i++){
         for(int j=i+1; j<k; j++){
             if(arr_new[i]+arr_new[j] == target){
