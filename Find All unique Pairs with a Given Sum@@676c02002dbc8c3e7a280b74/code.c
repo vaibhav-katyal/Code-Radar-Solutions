@@ -12,10 +12,18 @@ int main(){
     int target;
     scanf("%d", &target);
 
+    int printed[n][n];
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            printed[i][j] = 0;
+        }
+    }
+
     for(int i=0; i<n; i++){
         for(int j=i+1; j<n; j++){
-            if(arr[i]+arr[j] == target){
+            if(arr[i]+arr[j] == target && printed[i][j] == 0){
                 printf("%d %d\n", arr[i], arr[j]);
+                printed[i][j] = 1;
             }
         }
     }
