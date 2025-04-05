@@ -10,7 +10,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    int min = abs(arr[i]-arr[j]);
+    int min = abs(arr[0]-arr[1]);
     int p1 = 0;
     int p2 = 0;
     for(int i=0; i<n; i++){
