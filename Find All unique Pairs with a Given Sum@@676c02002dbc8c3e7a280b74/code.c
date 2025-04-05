@@ -12,11 +12,11 @@ int main(){
     int target;
     scanf("%d", &target);
 
-    int printed[n][n] = {0};
+    int printed[n][n] = {0}; // Simplified initialization
 
     for(int i=0; i<n; i++){
         for(int j=i+1; j<n; j++){
-            if(arr[i]+arr[j] == target && printed[i][j] == 0){
+            if(arr[i] + arr[j] == target && !printed[i][j]){
                 printf("%d %d\n", arr[i], arr[j]);
                 printed[i][j] = 1;
             }
