@@ -4,7 +4,7 @@ int calculatePenalty(int subDay, int subMonth, int subYear, int dueDay, int dueM
     if(subYear>dueYear){
         penalty += 5000;
     }
-    else if(subYear == dueYear && subMonth>subMonth){
+    else if(subYear == dueYear && subMonth>dueMonth){
         penalty += (subMonth-dueMonth)*200;
     }
     else if(subMonth == dueMonth && subDay>dueDay){
