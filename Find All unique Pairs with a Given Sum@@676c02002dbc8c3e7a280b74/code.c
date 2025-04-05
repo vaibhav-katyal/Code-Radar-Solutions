@@ -36,16 +36,12 @@ int main(){
 
     }
 
-    for(int i = 0; i<k; i++){
-        printf("%d ", arr_new[i]);
+    for(int i=0; i<k; i++){
+        for(int j=i+1; j<k; j++){
+            if(arr_new[i]+arr_new[j] == target){
+                printf("%d %d\n", arr_new[i], arr_new[j]);
+            }
+        }
     }
-
-    // for(int i=0; i<k; i++){
-    //     for(int j=i+1; j<k; j++){
-    //         if(arr_new[i]+arr_new[j] == target){
-    //             printf("%d %d\n", arr_new[i], arr_new[j]);
-    //         }
-    //     }
-    // }
     return 0;
 }
