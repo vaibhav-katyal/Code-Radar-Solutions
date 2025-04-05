@@ -28,10 +28,7 @@ int main(){
             }
         }
 
-        if(count == 1){
-            arr_new[k] = arr[i];
-            k++;
-        }
+        arr_new = arr[i];
     }
 
     for(int i=k-1; i>=0; i--){
