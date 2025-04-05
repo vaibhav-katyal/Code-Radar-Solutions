@@ -37,7 +37,7 @@ int main(){
     }
 
     for(int i=0; i<k; i++){
-        for(int j=i+1; j<k; j++){
+        for(int j=i; j<k; j++){
             if(arr_new[i]+arr_new[j] == target){
                 printf("%d %d\n", arr_new[i], arr_new[j]);
             }
