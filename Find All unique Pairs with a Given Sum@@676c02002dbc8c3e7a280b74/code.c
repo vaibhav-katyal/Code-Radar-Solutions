@@ -29,10 +29,10 @@ int main(){
                 count++;
                 visited[j] = 1;
             }
-
-            arr_new[k] = arr[i];
-            k++;
         }
+
+        arr_new[k] = arr[i];
+        k++;
 
     }
 
