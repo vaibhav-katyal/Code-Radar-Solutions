@@ -28,7 +28,8 @@ int main(){
             }
         }
 
-        arr_new = arr[i];
+        arr_new[k] = arr[i];
+        k++;
     }
 
     for(int i=k-1; i>=0; i--){
