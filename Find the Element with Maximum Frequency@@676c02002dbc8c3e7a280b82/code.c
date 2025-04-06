@@ -9,7 +9,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    int visited[n] = 0;
+    int visited[n];
     for(int i=0; i<n; i++){
         visited[i] = 0;
     }
@@ -23,6 +23,7 @@ int main(){
         for(int j=i+1; j<n; j++){
             if(arr[i] == arr[j]){
                 count++;
+                visited[j] = 1;
             }
         }
         if(count>max_count){
