@@ -31,7 +31,7 @@ int main(){
             }
         }
 
-        printf("%d", arr_even[k]);
+        printf("%d", arr_even[k-1]);
     }
     
     return 0;
