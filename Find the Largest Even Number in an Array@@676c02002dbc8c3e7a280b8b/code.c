@@ -17,16 +17,22 @@ int main(){
         }
     }
 
-    for(int i=k-1; i>=0; i--){
-        for(int j=0; j<i; j++){
-            if(arr_even[j]>arr_even[j+1]){
-                int temp = arr_even[j];
-                arr_even[j] = arr_even[j+1];
-                arr_even[j+1] = temp;
+    if(k<=0){
+        printf("%d", -1);
+    }
+    else{
+        for(int i=k-1; i>=0; i--){
+            for(int j=0; j<i; j++){
+                if(arr_even[j]>arr_even[j+1]){
+                    int temp = arr_even[j];
+                    arr_even[j] = arr_even[j+1];
+                    arr_even[j+1] = temp;
+                }
             }
         }
-    }
 
-    printf("%d", arr_even[k]);
+        printf("%d", arr_even[k]);
+    }
+    
     return 0;
 }
