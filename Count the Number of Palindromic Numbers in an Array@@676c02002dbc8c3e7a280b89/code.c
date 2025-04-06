@@ -6,7 +6,7 @@ int checkPalindrome(int n){
     int new_num = 0;
     while(num>0){
         int rem = num%10;
-        new_num += new_num*10+rem;
+        new_num += (new_num*10)+rem;
         num = num/10;
     }
 
