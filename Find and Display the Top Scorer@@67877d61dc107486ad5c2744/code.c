@@ -1,10 +1,11 @@
 #include<stdio.h>
+#include<string.h>
 
 struct Student{
     int rollNo;
     char name[50];
     float marks;
-}
+};
 int main(){
     struct Student stud[50];
     int n;
@@ -18,7 +19,7 @@ int main(){
         if(stud[i].marks > max_marks){
             max_marks = stud[i].marks;
             max_roll = stud[i].rollNo;
-            max_name = stud[i].name;
+            strcpy(max_name, stud[i].name);
         }
     }
 
