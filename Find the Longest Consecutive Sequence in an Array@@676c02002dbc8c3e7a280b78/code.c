@@ -5,10 +5,11 @@ int ls(int *arr, int n, int x){
         if(arr[i] == x){
             return 1;
         }
+        else{
+            return 0;
+        }
     }
-    else{
-        return 0;
-    }
+    return -1;
 }
 
 int main(){
