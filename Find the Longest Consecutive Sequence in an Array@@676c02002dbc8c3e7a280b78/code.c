@@ -15,8 +15,11 @@ int main(){
         int count = 1;
 
         for(int j=0; j<n; j++){
-            if(arr[j] == x+1);
-            count++;
+            if(arr[j] == x+1){
+                count++;
+                x = x+1;
+            }
+            
         }
         if(count > max_count){
             max_count = count;
