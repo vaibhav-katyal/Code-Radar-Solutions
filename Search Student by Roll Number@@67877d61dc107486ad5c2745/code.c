@@ -19,9 +19,9 @@ int main(){
 
     for(int i=0; i<n; i++){
         if(stud[i].rollNo == find){
-            printf("Roll Number: %d, Name: %s, Marks: %f", stud[i].rollNo, stud[i].name, stud[i].marks);
+            printf("Roll Number: %d, Name: %s, Marks: %.2f", stud[i].rollNo, stud[i].name, stud[i].marks);
         }
     }
-    
+
     return 0;
 }
