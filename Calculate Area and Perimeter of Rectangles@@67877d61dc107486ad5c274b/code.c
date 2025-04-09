@@ -8,6 +8,7 @@ struct Rectangle{
 int main(){
     struct Rectangle rec[50];
     int n;
+    scanf("%d", &n);
     for(int i=0; i<n; i++){
         scanf("%d %d", &rec[i].length, &rec[i].breadth);
     }
