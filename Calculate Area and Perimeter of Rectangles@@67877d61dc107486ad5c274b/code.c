@@ -3,7 +3,7 @@
 struct Rectangle{
     int length;
     int breadth;
-}
+};
 
 int main(){
     struct Rectangle rec[50];
