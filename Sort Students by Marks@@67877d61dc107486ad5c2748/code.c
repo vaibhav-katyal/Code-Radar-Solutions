@@ -16,7 +16,7 @@ int main(){
 
     for(int i=n-1; i>=0; i--){
         for(int j=0; j<i; j++){
-            if(arr[j]<arr[j+1]){
+            if(stud[j].marks<stud[j+1].marks){
                 struct Student temp = stud[j];
                 stud[j] = stud[j+1];
                 stud[j+1] = temp;
