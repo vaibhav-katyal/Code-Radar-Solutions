@@ -18,7 +18,7 @@ int main(){
     for(int i=0; i<n; i++){
         if(stud[i].marks>= 85){
             stud[i].grade = 'A';
-        }else if(stud[i].marks>=70 && stud[i].marks<=84.9){
+        }else if(stud[i].marks>=70 && stud[i].marks<85){
             stud[i].grade = 'B';
         }else{
             stud[i].grade = 'C';
