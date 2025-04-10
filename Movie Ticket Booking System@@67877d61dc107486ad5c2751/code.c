@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 struct MovieTicket{
     char movie[100];
     char type[50];
