@@ -14,16 +14,22 @@ int main(){
         scanf("%s %s %d", &m[i].movie, &m[i].type, &m[i].price);
     }
 
+    float st_total = 0;
+    float pre_total = 0;
+    float vip_total = 0;
+
     for(int i=0; i<n; i++){
-        if(emp[i].salary < 50000){
-            emp[i].bonus = 0.1*emp[i].salary;
-        }else{
-            emp[i].bonus = 0.05*emp[i].salary;
+        if(strcmp(m[i].type, "Standard") == 0){
+            st_total+= m[i].price;
+        }
+        else if(strcmp(m[i].type, "Premium") == 0){
+            pre_total+= m[i].price;
+        }
+        else{
+            vip_total+= m[i].pricet;
         }
     }
 
-    for(int i=0; i<n; i++){
-        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n", emp[i].empID, emp[i].name, emp[i].bonus);
-    }
+    printf("Standard: %.2f, Premium: %.2f, VIP: %.2f", st_total, pre_total, vip_total);
     return 0;
 }
