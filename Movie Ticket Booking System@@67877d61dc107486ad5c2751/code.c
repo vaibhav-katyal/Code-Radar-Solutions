@@ -27,7 +27,7 @@ int main(){
             pre_total+= m[i].price;
         }
         else{
-            vip_total+= m[i].pricet;
+            vip_total+= m[i].price;
         }
     }
 
