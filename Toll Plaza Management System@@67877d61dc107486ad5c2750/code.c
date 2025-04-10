@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 struct Vehicle{
     char vNo[100];
     char vType[50];
