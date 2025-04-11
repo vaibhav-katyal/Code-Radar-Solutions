@@ -28,12 +28,12 @@ int main(){
             basic_total+= s[i].price;
             basic_users++;
         }
-        else if(strcmp(m[i].type, "Premium") == 0){
-            pre_total+= m[i].price;
+        else if(strcmp(s[i].type, "Premium") == 0){
+            pre_total+= s[i].price;
             st_users++;
         }
         else{
-            vip_total+= m[i].price;
+            vip_total+= s[i].price;
             pre_users++;
         }
     }
