@@ -28,7 +28,7 @@ int main(){
             basic_total+= s[i].price;
             basic_users++;
         }
-        else if(strcmp(s[i].type, "Premium") == 0){
+        else if(strcmp(s[i].subs, "Premium") == 0){
             pre_total+= s[i].price;
             st_users++;
         }
