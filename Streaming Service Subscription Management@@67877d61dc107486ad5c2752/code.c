@@ -32,7 +32,7 @@ int main(){
             pre_total+= s[i].price;
             pre_users++;
         }
-        else{
+        else if(strcmp(s[i].subs, "Standard") == 0){
             st_total+= s[i].price;
             st_users++;
         }
