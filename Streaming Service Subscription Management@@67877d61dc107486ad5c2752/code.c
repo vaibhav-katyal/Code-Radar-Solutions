@@ -29,11 +29,11 @@ int main(){
             basic_users++;
         }
         else if(strcmp(s[i].subs, "Premium") == 0){
-            pre_total+= s[i].price;
+            st_total+= s[i].price;
             st_users++;
         }
         else{
-            vip_total+= s[i].price;
+            pre_total+= s[i].price;
             pre_users++;
         }
     }
